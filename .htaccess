@@ -92,10 +92,31 @@
 </IfModule>
 FileETag None
 
+# Enable URL Rewriting
+RewriteEngine On
+
 # Redirect to HTTPS (uncomment if SSL is available)
-# RewriteEngine On
 # RewriteCond %{HTTPS} off
 # RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Friendly URLs for SugarMute Presell
+# Redirect /sugarmute to /sugarmute.html
+RewriteRule ^sugarmute/?$ sugarmute.html [L]
+
+# Redirect /sugarmute-presell to /sugarmute.html
+RewriteRule ^sugarmute-presell/?$ sugarmute.html [L]
+
+# Redirect /blood-sugar-support to /sugarmute.html
+RewriteRule ^blood-sugar-support/?$ sugarmute.html [L]
+
+# Redirect /natural-blood-sugar to /sugarmute.html
+RewriteRule ^natural-blood-sugar/?$ sugarmute.html [L]
+
+# Redirect /diabetes-support to /sugarmute.html
+RewriteRule ^diabetes-support/?$ sugarmute.html [L]
+
+# Redirect /healthy-blood-sugar to /sugarmute.html
+RewriteRule ^healthy-blood-sugar/?$ sugarmute.html [L]
 
 # Custom Error Pages
 ErrorDocument 404 /404.html
