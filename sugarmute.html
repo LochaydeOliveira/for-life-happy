@@ -44,14 +44,13 @@
     <section class="py-5">
         <div class="container">
             <div class="row align-items-center">
-                <!-- Mobile: Título + Imagem + Conteúdo -->
+
                 <div class="col-12 d-lg-none">
                     <div class="text-center">
                         <h1 class="display-4 mb-4 text-dark">
                             Support Healthy Blood Sugar Levels <span class="text-dark-blue">Naturally</span>
                         </h1>
                         
-                        <!-- Imagem no mobile (logo após o título) -->
                         <div class="mb-4">
                             <picture>
                                 <source srcset="images/sugarmute-pod-landscape.webp" type="image/webp">
@@ -63,7 +62,6 @@
                             SugarMute is a scientifically-formulated dietary supplement that combines 10 carefully-selected natural ingredients to help maintain healthy blood sugar levels and boost your all-day natural energy.
                         </p>
                         
-                        <!-- Key Benefits -->
                         <div class="mb-4">
                             <div class="d-flex align-items-center mb-2">
                                 <span class="text-dark-blue me-3 fs-4">✓</span>
@@ -83,14 +81,13 @@
                             </div>
                         </div>
                         
-                        <!-- CTA Button -->
+
                         <div class="mb-4">
                             <a href="#pricing" class="btn-new btn-primary-new d-inline-block">
                                 ORDER NOW
                             </a>
                         </div>
                         
-                        <!-- Guarantee -->
                         <div class="text-dark">
                             <p class="mb-0 fw-bold">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shield-check me-2" viewBox="0 0 16 16">
@@ -103,7 +100,6 @@
                     </div>
                 </div>
                 
-                <!-- Desktop: Layout lado a lado -->
                 <div class="col-12 col-lg-6 mb-4 mb-lg-0 d-none d-lg-block">
                     <div class="text-center text-lg-start">
                         <h1 class="display-4 mb-4 text-dark">
@@ -113,7 +109,6 @@
                             SugarMute is a scientifically-formulated dietary supplement that combines 10 carefully-selected natural ingredients to help maintain healthy blood sugar levels and boost your all-day natural energy.
                         </p>
                         
-                        <!-- Key Benefits -->
                         <div class="mb-4">
                             <div class="d-flex align-items-center mb-2">
                                 <span class="text-dark-blue me-3 fs-4">✓</span>
@@ -133,14 +128,14 @@
                             </div>
                         </div>
                         
-                        <!-- CTA Button -->
+  
                         <div class="mb-4">
                             <a href="#pricing" class="btn-new btn-primary-new d-inline-block">
                                 ORDER NOW
                             </a>
                         </div>
                         
-                        <!-- Guarantee -->
+
                         <div class="text-dark">
                             <p class="mb-0 fw-bold">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shield-check me-2" viewBox="0 0 16 16">
@@ -413,12 +408,12 @@
     </footer>
 
 
-    <!-- jQuery for location detection -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
     <script>
         $.get("https://ipinfo.io/json", function(response) {
-            // Atualiza o conteúdo do elemento com a cidade obtida
+           
             const locationElement = document.getElementById('user-location');
             const iconHtml = locationElement.querySelector('svg').outerHTML;
             locationElement.innerHTML = iconHtml + response.city;
